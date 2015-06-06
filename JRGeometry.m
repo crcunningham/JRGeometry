@@ -123,6 +123,10 @@ CGRect JRMultiplyRectScalar(CGRect rect, CGFloat s) {
 	return result;
 }
 
+CGFloat JRRound(CGFloat a) {
+    return (CGFloat)round(a);
+}
+
 CGRect JRRoundedRectForMainScreen(CGRect rect) {
 	CGFloat screenScale = [[UIScreen mainScreen] scale];
 	return JRRoundedRectForScale(rect, screenScale);
