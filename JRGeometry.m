@@ -116,7 +116,7 @@ CGRect JRMultiplyRectScalar(CGRect rect, CGFloat s) {
 		return rect;
 	}
 	
-    CGRect result = CGRectZero;
+    CGRect result = rect;
     rect.origin = JRMultiplyPointScalar(rect.origin, s);
     rect.size = JRMultiplySizeScalar(rect.size, s);
     
